@@ -1,0 +1,26 @@
+{
+  "name": "signalrclient",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "start": "parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "alias": { 
+    "process": {
+      "global": "process"
+    }
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.11.0",
+    "process": "^0.11.10",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.0"
+  }
+}

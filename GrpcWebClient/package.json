@@ -1,0 +1,26 @@
+{
+  "name": "signalrclient",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "start": "parcel",
+    "generate-client": "protoc -I=../GrpcShared greet.proto --js_out=import_style=commonjs:./src --grpc-web_out=import_style=typescript,mode=grpcwebtext:./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "alias": {
+    "process": {
+      "global": "process"
+    }
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "google-protobuf": "^3.21.2",
+    "grpc-web": "^1.5.0"
+  }
+}
